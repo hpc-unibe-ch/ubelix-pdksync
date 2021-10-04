@@ -1,0 +1,44 @@
+[backwards-incompatible]
+color = "d73a4a"
+name = "backwards-incompatible"
+description = "A code change probably that needs a change on user side"
+
+[bug]
+color = "d73a4a"
+name = "bug"
+description = "Something isn't working"
+
+["do not merge"]
+color = "d73a4a"
+name = "do not merge"
+description = "Do not merge this PR!"
+
+[documentation]
+color = "0075ca"
+name = "documentation"
+description = "Improvements or additions to documentation"
+
+[enhancement]
+color = "506c33"
+name = "enhancement"
+description = "New feature or request"
+
+[invalid]
+color = "7057ff"
+name = "invalid"
+description = "This doesn't seem right"
+
+[maintenance]
+color = "ffd86e"
+name = "maintenance"
+description = "Automation tasks like pdksync"
+
+[question]
+color = "d876e3"
+name = "question"
+description = "Further information is requested"
+
+[wontfix]
+color = "ffffff"
+name = "wontfix"
+description = "This will not be worked on"

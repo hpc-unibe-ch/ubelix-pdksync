@@ -1,0 +1,19 @@
+#!/bin/bash
+
+organization=$(awk '/^namespace/{print substr($2,2,length($2)-2)}' pdksync.yml)
+repos=$(awk '/^- /{print $2}' labeled_repos.yml)
+
+if ! type labels >/dev/null 2>&1
+then
+  echo "Command labels not found. Is it installed?"
+  exit 1
+fi
+
+for repo in $repos
+do
+  echo "Syncing repo ${organization}/${repo}"
+  labels sync -f labels.toml -o $organization -r $repo
+done
+
+echo "Finished syncing lables."
+
