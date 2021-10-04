@@ -1,0 +1,7 @@
+---
+# Verify settings by running: bundle exec rake pdksync:show_config
+namespace: 'hpc-unibe-ch'
+git_base_uri: 'git@github.com'
+pdksync_label: 'maintenance'
+create_pr_against: 'main'
+managed_modules: 'managed_modules.yml'
