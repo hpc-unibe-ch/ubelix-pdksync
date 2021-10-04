@@ -1,0 +1,10 @@
+session_name: pdksync
+windows:
+- focus: 'true'
+  window_name: pdksync
+  layout: even-vertical
+  options:
+    automatic-rename: 'off'
+  panes:
+  - pane
+  - focus: 'true'
